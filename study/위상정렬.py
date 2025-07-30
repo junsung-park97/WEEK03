@@ -14,7 +14,7 @@ def topological_sort(n, graph):
             in_degree[neighbor] += 1
 
     queue = deque([])
-    #그래프리스트의 전체 노드 반복
+    #그래프리스트의 전체 노드 반복 => 인접차수 반복아닌가?
     for node in range(1, n + 1):
         if neighbor == 0:
             queue.append(node)
